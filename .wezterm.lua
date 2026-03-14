@@ -19,7 +19,7 @@ config.window_padding = { left = 0, right = 0, top = 30, bottom = 10 }
 
 -- safe to keep these on linux as well
 config.macos_window_background_blur = 10
-config.window_background_image = "/Users/sidsurakanti/dotfiles/wallpapers/stars.jpg"
+-- config.window_background_image = "/Users/sidsurakanti/dotfiles/wallpapers/stars.jpg"
 config.window_background_image_hsb = {
 	brightness = 0.05,
 	saturation = 1.2,
