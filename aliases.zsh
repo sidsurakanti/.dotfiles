@@ -4,6 +4,7 @@ alias projects="cd $HOME/projects"
 alias dotfiles="cd $DOTFILES && nvim"
 alias watch="npm run dev"
 alias py="python3"
+alias g++='g++-16'
 
 alias commit="git add . && git commit -m"
 alias pull="git pull"
