@@ -2,7 +2,6 @@ local wez = require("wezterm")
 local config = wez.config_builder()
 
 config.font_size = 15.0
-config.font = wez.font("Hack Nerd Font")
 config.color_scheme = "rose-pine-moon"
 config.initial_rows = 35
 config.initial_cols = 156
@@ -15,10 +14,14 @@ config.hide_tab_bar_if_only_one_tab = true
 config.enable_scroll_bar = false
 
 config.window_background_opacity = 0.8
-config.window_decorations = "NONE"
 config.window_padding = { left = 0, right = 0, top = 30, bottom = 10 }
 config.macos_window_background_blur = 50
 config.window_decorations = "RESIZE"
+
+if wez.target_triple:find("linux") then
+	config.window_background_opacity = 0.975
+	config.window_decorations = "NONE"
+end
 
 -- config.window_background_image = "/Users/sidsurakanti/dotfiles/wallpapers/stars.jpg"
 config.window_background_image_hsb = {
